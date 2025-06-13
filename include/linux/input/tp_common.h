@@ -1,8 +1,5 @@
 #include <linux/kobject.h>
 
-extern bool capacitive_keys_enabled;
-extern struct kobject *touchpanel_kobj;
-
 struct tp_common_ops {
 	ssize_t (*show)(struct kobject *kobj, struct kobj_attribute *attr,
 			char *buf);
